@@ -30,4 +30,10 @@ describe "Rake tasks" do
       expect(Course.find_by_id(1)).to eq([[1, "Learn Ruby Now!", "learn Ruby with this class"]])
     end
   end
+
+  describe "rake task descriptions" do 
+    it "all rake tasks you define have descriptions" do 
+      expect(`rake -T`).to include("create_file" && "db:seed" && "db:migrate")
+    end
+  end
 end
