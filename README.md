@@ -14,3 +14,5 @@ For this lab, we've provided you with a working `Course` class, that produces in
 1. In your Rakefile, build a Rake task, `create_file`. This task should have the following description: `"creates and writes to a new file called new_file.rb"`. This task should create a new file called `new_file.rb` in the top-level of this directory. This task should also write the following content to this file: `"This file is brought to you by Rake!"`. 
 2. In your Rakefile, build a Rake task, `migrate`. This task should be namespaced under `db`. This task should use the `Course.create_table` method to create the courses table. This task should have a description. 
 3. In your Rakefile, build a Rake task, `seed`. this task should be namespaced under `db`. This task should run the code in the `db/seeds.rb` file to seed your database with the dummy data oultined in that file. This task should have a description.
+
+<a href='https://learn.co/lessons/rake-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
