@@ -6,7 +6,6 @@ class Course
   #  with DB[:conn]  
   
   attr_accessor :name, :description
-  
   attr_reader :id
   
   def initialize(name, description, id=nil)
@@ -41,7 +40,9 @@ class Course
     
   end
 
-  def self.create(name:, description:)
+  def self.create(hash)
+    name = hash[:name]
+    description = hash[:description]
     course = Course.new(name, description)
     course.save
   end
